@@ -1,10 +1,16 @@
 #app {
+  display: grid;
+  grid-template-columns: 2fr 6fr fr 4fr;
+  grid-template-rows: 3fr 3fr 4fr;
   height: 300px;
   width: 500px;
 }
 
 #header {
+  display: grid;
+  grid-column: 1 / 4;
   background-color: #9BCE1D;
+
 }
 
 #main {
@@ -15,18 +21,19 @@
   background-color: lightcoral;
 }
 
-#article-2 {
-  background-color: violet;
-}
+
 
 #nav {
   background-color: cornflowerblue;
 }
 
-#ad-area {
+#add {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
   background-color: cornflowerblue;
 }
 
 #footer {
+  grid-column: 1 / 4;
   background-color: #9BCE1D;
 }
